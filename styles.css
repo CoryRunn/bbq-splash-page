@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    margin: 0;
+    text-align: center;
+}
+
+/*** Typography***/
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.top-text {
+    font-size: .625rem;
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    order: -1;
+}
+
+.fine-print {
+    font-size: .625rem;
+    letter-spacing: 1px;
+}
+
+
+/*** Intro Section***/
+
+.intro {
+    background-image: url(../images/ribs.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #404040;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+/*** main-content section ***/
+
+.main-content {
+    padding: 2em 1em;
+}
+
+/* direct children  width (esentially a container)*/
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*** media query ***/
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+
+}
